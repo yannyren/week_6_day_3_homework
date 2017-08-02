@@ -1,5 +1,5 @@
 import static org.junit.Assert.*;
-import org.junit.*;
+import org.junit.*; 
 import driver_management.*;
 
 public class DodgemCarTest {
@@ -8,12 +8,12 @@ public class DodgemCarTest {
 
   @Before
   public void before() {
-    car = new DodgemCar(10);
+    car = new DodgemCar(10, 4);
 
   }
 
   @Test 
   public void driveDistanceReturnsTime(){
-    assertEquals(1, car.driveDistance(10));
+    assertEquals(1, car.driveTime(10));
   }
 }
