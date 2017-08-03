@@ -11,6 +11,14 @@ public class Driver{
     this.vehicle = vehicle;
   }
 
+  public String getName(){
+    return this.name;
+  }
+
+  public Driveable getVehicle(){
+    return this.vehicle;
+  }
+
   public void driveTime(int distance) {
      this.vehicle.driveTime(distance);
   }

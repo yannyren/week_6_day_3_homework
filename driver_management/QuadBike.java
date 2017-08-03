@@ -1,19 +1,16 @@
 package driver_management;
 import behaviours.*;
 
-public class QuadBike implements Driveable {
+public class QuadBike extends Vehicle implements Driveable {
 
-  private int averageSpeed;
-  private double engineCapacity;
+  public int averageSpeed;
+  private String engineCapacity;
 
-  public QuadBike(int averageSpeed, double engineCapacity) {
-    this.averageSpeed = averageSpeed;
+  public QuadBike(int averageSpeed, String engineCapacity) {
+    super(averageSpeed);
     this.engineCapacity = engineCapacity;
   }
 
-  public int driveTime(int distance) {
-    return distance/this.averageSpeed;
-  }
 
 
 
